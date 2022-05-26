@@ -22,11 +22,6 @@ with open(srcfile, encoding="utf8") as myFile:
 words = re.findall(r'\w+', open_file)
 #print('Слова:', words)
 
-#найти повторы слов
-cap_words = [word.lower() for word in words]
-word_counts = Counter(cap_words)
-#print('Повторы слов:', word_counts)
-
 #найти слова больше 3 символов
 words_3 = ''
 for (index, elem) in enumerate(words):
